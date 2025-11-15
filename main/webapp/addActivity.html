@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 400px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 12px 0 6px;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Activity</h2>
+        <form action="addActivity" method="post">
+            <label for="type">Activity Type</label>
+            <select name="type" id="type" required>
+                <option value="" disabled selected>-- Select an activity --</option>
+                <option value="Car">Car</option>
+                <option value="Bus">Bus</option>
+                <option value="Flight">Flight</option>
+                <option value="Electricity">Electricity</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" step="any" name="quantity" id="quantity" placeholder="Enter quantity" required>
+
+            <input type="submit" value="Add Activity">
+        </form>
+        <div class="links">
+            <a href="report">View Report</a>
+        </div>
+    </div>
+</body>
+</html>
