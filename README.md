@@ -5,7 +5,7 @@ A simple application to record daily activities and calculate carbon emissions. 
 
 ---
 
-## 🚀 Features
+##  Features
 - Add / update / delete activity logs  
 - Auto emission calculation: `emissions = quantity × emission_factor`  
 - View all logs in table format  
@@ -15,7 +15,7 @@ A simple application to record daily activities and calculate carbon emissions. 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Java 8+  
 - JDBC  
 - MySQL  
