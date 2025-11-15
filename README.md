@@ -1,4 +1,4 @@
-# 🌍 Carbon Footprint Tracker  
+#  Carbon Footprint Tracker  
 ### Java + JDBC + MySQL + HTML/CSS
 
 A simple application to record daily activities and calculate carbon emissions. Built using **Core Java (JDBC)**, **MySQL**, and **HTML/CSS**. Suitable for beginners and academic projects.
@@ -24,7 +24,7 @@ A simple application to record daily activities and calculate carbon emissions. 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 src/
 db/DBConnection.java
 model/Activity.java
@@ -42,7 +42,7 @@ Copy code
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 ```sql
 CREATE TABLE activities (
   activity_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -72,7 +72,7 @@ public class DBConnection {
         }
     }
 }
-📊 Useful SQL Queries
+ Useful SQL Queries
 Monthly emissions
 
 sql
@@ -86,7 +86,7 @@ Copy code
 SELECT activity_type, SUM(emissions_kg) AS total
 FROM activities GROUP BY activity_type
 ORDER BY total DESC LIMIT 1;
-▶️ How to Run
+How to Run
 Create MySQL database:
 
 sql
